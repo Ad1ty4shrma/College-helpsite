@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: url('https://upload.wikimedia.org/wikipedia/commons/c/c9/Juit_o.jpg') no-repeat center center/cover;
+        }
+
+        .container {
+            display: flex;
+            width: 850px;
+            height: 500px;
+            background: rgba(8, 0, 0, 0.05);
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(17, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        .left {
+            flex: 1;
+            background: url('https://www.juit.ac.in/front/images/banner.jpg') no-repeat center center/cover;
+        }
+
+        .right {
+            flex: 1;
+            background: #000911;
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: white;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        .input-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-size: 14px;
+            color: #bbb;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            background: rgba(255, 255, 255, 0.1);
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 14px;
+        }
+
+        input:focus {
+            outline: none;
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .checkbox-group {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 14px;
+            color: #bbb;
+            margin-bottom: 20px;
+        }
+
+        .checkbox-group div {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            white-space: nowrap;    
+        }
+
+         .checkbox-group a {
+            color: #4ea8de;
+            text-decoration: none;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background: #4ea8de;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #3b8dc6;
+        }
+
+        .google-btn {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background: #4285f4;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+            margin-top: 10px;
+        }
+
+        .google-btn:hover {
+            background: #357ae8;
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 12px;
+            color: #bbb;
+            margin-top: 20px;
+        }
+
+        .footer a {
+            color: #4ea8de;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left"></div>
+        <div class="right">
+            <h2>Sign In</h2>
+            <div class="input-group">
+                <label for="email">Your email</label>
+                <input type="email" id="email" placeholder="Enter your email">
+            </div>
+            <div class="input-group">
+                <label for="password">Your password</label>
+                <input type="password" id="password" placeholder="Enter your password">
+            </div>
+            <div class="checkbox-group">
+                <div>
+                    <input type="checkbox" id="keep-logged">
+                    <label for="keep-logged">Stay logged in</label>
+                </div>
+                <a href="#">Forgot password?</a>
+            </div>
+            <a href="homepage.html"><button class="google-btn">SIGN IN</button></a>            
+            <button class="google-btn">SIGN IN WITH GOOGLE</button>
+            <div class="footer">
+                <p>Privacy • Terms • About</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
