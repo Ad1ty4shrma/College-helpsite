@@ -19,23 +19,29 @@
             text-align: center;
         }
 
-        .navbar {
+/* Navbar */
+.navbar {
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 20px 50px;
-            background: #1e1e1e;
+            background: linear-gradient(90deg, #1e1e1e, #333);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            position: relative;
+            z-index: 1;
         }
 
         .navbar .logo {
-            font-size: 24px;
-            font-weight: 600;
+            font-size: 26px;
+            font-weight: 700;
+            color: #4ea8de;
+            letter-spacing: 1px;
         }
 
         .navbar ul {
             list-style: none;
             display: flex;
-            gap: 20px;
+            gap: 25px;
         }
 
         .navbar ul li {
@@ -45,11 +51,23 @@
         .navbar ul li a {
             color: white;
             text-decoration: none;
-            font-size: 16px;
+            font-size: 18px;
             transition: 0.3s;
+            padding: 8px 15px;
+            border-radius: 5px;
         }
 
         .navbar ul li a:hover {
+            background: #4ea8de;
+            color: #121212;
+        }
+
+        /* Page Title */
+        .page-title {
+            font-size: 36px;
+            font-weight: 600;
+            margin-top: 70px;
+            margin-bottom: 30px;
             color: #4ea8de;
         }
 
@@ -95,8 +113,8 @@
             <li><a href="homepage.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="outpass.html">Outpass Signing</a></li> 
-            <li><a href="#">Reports</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="report.html">Reports</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
 
